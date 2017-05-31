@@ -1,0 +1,1 @@
+pushd /tmp/configpage && dpkg-buildpackage -us -uc

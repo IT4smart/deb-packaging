@@ -1,0 +1,131 @@
+configpage (0.11.2~deb8) jessie; urgency=low
+  * fix cmake for autobuild
+
+ -- IT4S GmbH <support@it4s.eu>  Wed, 24 May 2017 23:44:06 +0200
+configpage (0.11.1~deb8) jessie; urgency=low
+  * bump to version 0.11.1
+
+  * fix typo
+
+ -- IT4S GmbH <support@it4s.eu>  Tue, 16 May 2017 19:00:10 +0200
+configpage (0.11.0~deb8) jessie; urgency=low
+  * bump to version 0.11.0
+
+  * remove network settings check if we are on the right platform to set screen resolution
+
+  * start change the way to handle data getting from the settings file
+
+  * fix typo
+
+  * add reboot
+
+  * fix an issue with change the screen resolution setting on /boot/config.txt
+
+  * fix dependency for python. fix that we only can select dynamic screen resolution mode if there is no setting available yet.
+
+  * fix that if no config for screen resolution is given, then the type is dynamic
+
+  * fix dependency on control file
+
+  * remove the check if we are running on arm. Our qt version on RPi is to low.
+
+ -- IT4S GmbH <support@it4s.eu>  Tue, 16 May 2017 14:23:57 +0200
+
+configpage (0.10.0~deb8) jessie; urgency=low
+  * bump to version 0.10.0 clean cmake files add dependency for python.
+
+  * add function to change screen resolution on raspberry pi
+
+  * add folder 'certificates' for proper building debian package
+
+  * Rename package with debian convention
+
+  * bugfix path to StartPage for debian package
+
+  * make ConfigPage.sh executable
+
+  * bugfix debian packageing
+
+  * add support for rdp autologin
+
+  * add architecture armhf
+
+  * add debian packageing add cmake to build binary
+
+  * add support for rdp
+
+  * start StartPage if ConfigPage closes or saved. add script to start it.
+
+  * pfade angepasst auf StartPage
+
+  * mit StartPage verlinkt und pfade in .h datei als konstanten
+
+  * add syslog support and clean up code a little bit
+
+  * fixes to work unter armhf architecture
+
+  * all data added
+
+  * directory deleted
+
+  * lightweight version of configpage
+
+  * fixes #2
+
+  * multilangues fuer alle funktionen in en und de eingerichtet
+
+  * stabil: Mehrsprachigkeit integriert, nur noch nicht ueberall uebernommen
+
+  * log ordner auto. erstellt, alles mit skripten
+
+  * fix #1; Neues Profil anlegen in alle Sprachen möglich
+
+  * setter für citrix und rdp, siehe ./ConfigPage -h bisher noch ohne rechtevergabe rw für alle bei setting.ini und co
+
+  * list.sort() bug behoben
+
+  * sprachen der gui und in setting.ini umstellbar. Fehlermeldungen noch auf english
+
+  * alles auf IniFile umgestellt und nm_restart verbessert, noch keine Sprachen, aber lauffaehig (nur kurzer test)
+
+  * ACHTUNG: Keine Lauffähige Version. profile wird umgebaut auf IniFile. Nur als Sicherheitskopie
+
+  * setting.ini verbessert
+
+  * angepasst auf Qt IDE
+
+  * ui_mainwindow.h hinzugefügt
+
+  * .pro datei hinzugefuegt
+
+  * kleine verbesserung
+
+  * kleine verbesserungen und language zumindest in parameter_return
+
+  * design veraendert und citrix url + store
+
+  * cmakelists zeiel gelöscht
+
+  * die neuen libs eingebaut und dateien geloescht. und standard profile etc hinzugefuegt
+
+  * REadme
+
+  * README.md erstellt
+
+  * Dieser Branch zum weiterarbeiten, README
+
+  * Uni Projekt neu angelegt
+
+  * Test
+
+  * change config to all
+
+  * format
+
+  * Added function to upload certificates and if we run "configuration NET_TYPE" we get the latest network information.
+
+  * Initialer Source Code von Alexander Racic
+
+  * first commit
+
+ -- IT4S  GmbH <support@it4s.eu> Mon, 20 Mar 2017 15:53:19 +0100

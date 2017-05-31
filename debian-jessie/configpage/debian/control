@@ -1,0 +1,12 @@
+Source: configpage
+Section: utils
+Priority: optional
+Maintainer: IT4S GmbH <support@it4s.eu>
+Build-Depends: debhelper (>= 9), qt5-default, cmake
+Standards-Version: 3.9.5
+
+Package: configpage
+Architecture: any
+Pre-Depends: dpkg (>= 1.16.1), qt5-default, python2.7, ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Description: Application to configure StartPage and the way to communicate with the administration console 
