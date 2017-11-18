@@ -1,0 +1,1 @@
+pushd /tmp/startpage && dpkg-buildpackage -us -uc

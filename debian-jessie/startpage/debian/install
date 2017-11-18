@@ -1,0 +1,3 @@
+obj-arm-linux-gnueabihf/StartPage /opt/IT4S/startpage/StartPage/
+files/opt/IT4S/StartPage.sh /opt/IT4S/
+Ressources/ /opt/IT4S/startpage/
