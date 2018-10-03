@@ -1,7 +1,7 @@
 Source: startpage
 Section: utils
 Priority: optional
-Maintainer: IT4S GmbH <support@it4s.eu>
+Maintainer: IT4smart GmbH <support@it4smart.eu>
 Build-Depends: debhelper (>= 9), qt5-default, cmake
 Standards-Version: 3.9.5
 
@@ -9,4 +9,4 @@ Package: startpage
 Architecture: any
 Pre-Depends: dpkg (>= 1.16.1), qt5-default, ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Description: Mainscreen where the user can sign in to any remote system 
+Description: Mainscreen where the user can sign in to any remote system
