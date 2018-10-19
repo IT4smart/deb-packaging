@@ -97,9 +97,16 @@ if [ "$DISTRIBUTION" = raspbian ] ; then
 fi
 }
 
-function prepare_build_env() {  
+function prepare_build_env() {
 
-    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git,build-essential,bc,dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv,qt5-default,cmake,dh-make
+    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git
+    if [ "${PKGNAME}" = "startpage" ] || [ "${PKGNAME}" = "configpage" ]; then
+      APT_INCLUDES="${APT_INCLUDES},build-essential,bc,dh-systemd,qt5-default,cmake,dh-make"
+    fi
+
+    if [ "${PKGNAME}" = "management-agent" ] ; then
+      APT_INCLUDES="${APT_INCLUDES}, dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
+    fi
 
     # Base debootstrap
     if [ "${1}" = "armv7" ] ; then
@@ -108,21 +115,21 @@ function prepare_build_env() {
     else
         http_proxy=${APT_PROXY} debootstrap --arch="${RELEASE_ARCH}" --foreign --include="${APT_INCLUDES}" "${RELEASE}" "${R}" "http://${APT_SERVER}/${DISTRIBUTION}"
     fi
-    
+
     # Copy qemu emulator binary to chroot
     cp "${QEMU_BINARY}" "$R/usr/bin"
 
     # Copy debian-archive-keyring.pgp
     mkdir -p "$R/usr/share/keyrings"
     install_readonly /usr/share/keyrings/debian-archive-keyring.gpg "${R}/usr/share/keyrings/debian-archive-keyring.gpg"
-    
+
     # Complete the bootstrapping process
     chroot_exec /debootstrap/debootstrap --second-stage
-    
+
     # Mount required filesystems
     mount -t proc none "$R/proc"
     mount -t sysfs none "$R/sys"
-    
+
     # Mount pseudo terminal slave if supported by Debian release
     #if [ -d "${R}/dev/pts" ] ; then
         mount --bind /dev/pts "${R}/dev/pts"
@@ -174,7 +181,7 @@ function uri_parser() {
 }
 
 #########
-## MAIN 
+## MAIN
 #########
 echo -e "Prepare environment"
 rm -rf "${WRK}"

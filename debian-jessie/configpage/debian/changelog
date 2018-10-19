@@ -1,13 +1,18 @@
+/tmp/git-tmp.bmTchu /opt/it4smart/deb-packaging/debian-jessie/configpage
 configpage (0.11.2~deb8) jessie; urgency=low
-  * fix cmake for autobuild
+  * Generate UI header file from UI file.
 
- -- IT4S GmbH <support@it4s.eu>  Wed, 24 May 2017 23:44:06 +0200
+  * bump to version 0.11.2
+
+  * Add a little bit more documentation. Changed company name from IT4S to IT4smart.
+
+ -- IT4smart GmbH <support@it4smart.eu>  Fri, 19 Oct 2018 20:52:16 +0200
 configpage (0.11.1~deb8) jessie; urgency=low
   * bump to version 0.11.1
 
   * fix typo
 
- -- IT4S GmbH <support@it4s.eu>  Tue, 16 May 2017 19:00:10 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Tue, 16 May 2017 19:00:10 +0200
 configpage (0.11.0~deb8) jessie; urgency=low
   * bump to version 0.11.0
 
@@ -29,8 +34,7 @@ configpage (0.11.0~deb8) jessie; urgency=low
 
   * remove the check if we are running on arm. Our qt version on RPi is to low.
 
- -- IT4S GmbH <support@it4s.eu>  Tue, 16 May 2017 14:23:57 +0200
-
+ -- IT4smart GmbH <support@it4smart.eu>  Tue, 16 May 2017 14:23:57 +0200
 configpage (0.10.0~deb8) jessie; urgency=low
   * bump to version 0.10.0 clean cmake files add dependency for python.
 
@@ -50,6 +54,9 @@ configpage (0.10.0~deb8) jessie; urgency=low
 
   * add architecture armhf
 
+ -- IT4smart GmbH <support@it4smart.eu>  Mon, 20 Mar 2017 15:53:19 +0100
+
+configpage (0.9.3~deb8) jessie; urgency=low
   * add debian packageing add cmake to build binary
 
   * add support for rdp
@@ -128,4 +135,4 @@ configpage (0.10.0~deb8) jessie; urgency=low
 
   * first commit
 
- -- IT4S  GmbH <support@it4s.eu> Mon, 20 Mar 2017 15:53:19 +0100
+ -- IT4smart  GmbH <support@it4smart.eu> Thu, 8 Sep 2016 08:15:24 +0200

@@ -1,5 +1,5 @@
-obj-arm-linux-gnueabihf/ConfigPage /opt/IT4S/configurationpage/
-files/opt/IT4S/ConfigPage.sh /opt/IT4S/
-ConfigPage/scripts/ /opt/IT4S/configurationpage/
-ConfigPage/setting/ /opt/IT4S/configurationpage/
-ConfigPage/certificates/ /opt/IT4S/configurationpage/
+obj-arm-linux-gnueabihf/ConfigPage /opt/IT4smart/configurationpage/
+files/opt/IT4smart/ConfigPage.sh /opt/IT4smart/
+ConfigPage/scripts/ /opt/IT4smart/configurationpage/
+ConfigPage/setting/ /opt/IT4smart/configurationpage/
+ConfigPage/certificates/ /opt/IT4smart/configurationpage/

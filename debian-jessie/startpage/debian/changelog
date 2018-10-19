@@ -1,12 +1,22 @@
-
+/tmp/git-tmp.Fp9Ghn /opt/it4smart/deb-packaging/debian-jessie/startpage
 startpage (0.9.6~deb8) jessie; urgency=low
+  * Set CMake command to generate ui header file.
+
+  * Update README.md. Also generate UI code with cmake. Add basic cirlce ci support
+
+  * Found some lines with old company name. Changed it.
+
+  * Bump version to 0.9.6. Set company name to IT4smart for debian packaging.
+
+  * Set company name for logging to IT4smart.
+
   * bugfix architecture for generate debian package name
 
   * bugfix get package name for generate filename of debian package
 
   * change filename of the builded debian package. Now our package has the common debian format: package_version_arch.deb
 
- -- IT4S GmbH <support@it4s.eu>  Thu, 20 Oct 2016 13:59:59 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Wed, 17 Oct 2018 23:03:05 +0200
 startpage (0.9.5~deb8) jessie; urgency=low
   * bump to version 0.9.5
 
@@ -16,7 +26,7 @@ startpage (0.9.5~deb8) jessie; urgency=low
 
   * bugfix output for rdp argumentlist
 
- -- IT4S GmbH <support@it4s.eu>  Sun, 16 Oct 2016 23:41:17 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Sun, 16 Oct 2016 23:41:17 +0200
 startpage (0.9.4~deb8) jessie; urgency=low
   * bump to version 0.9.4
 
@@ -36,7 +46,7 @@ startpage (0.9.4~deb8) jessie; urgency=low
 
   * change the way to connect with rdp session. TODO: disable UI for user whe process is running.
 
- -- IT4S GmbH <support@it4s.eu>  Mon, 19 Sep 2016 15:08:52 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Mon, 19 Sep 2016 15:08:52 +0200
 startpage (0.9.3~deb8) jessie; urgency=low
   * bump to version 0.9.3
 
@@ -68,7 +78,7 @@ startpage (0.9.3~deb8) jessie; urgency=low
 
   * .gitignore angepasst
 
- -- IT4S GmbH <support@it4s.eu>  Wed, 7 Sep 2016 08:47:31 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Wed, 7 Sep 2016 08:47:31 +0200
 startpage (0.9.2~deb8) jessie; urgency=low
   * bump to version 0.9.2
 
@@ -116,7 +126,7 @@ startpage (0.9.2~deb8) jessie; urgency=low
 
   * mit neuem System aufgerufen Ubuntu 16LTS
 
- -- IT4S GmbH <support@it4s.eu>  Mon, 29 Aug 2016 16:10:48 +0200
+ -- IT4smart GmbH <support@it4smart.eu>  Mon, 29 Aug 2016 16:10:48 +0200
 
 startpage (0.9.0~deb8) jessie; urgency=low
   * add content to readme file
@@ -219,4 +229,4 @@ startpage (0.9.0~deb8) jessie; urgency=low
 
   * first commit
 
- -- IT4S  GmbH <support@it4s.eu> Tue, 17 May 2016 18:58:36 +0200
+ -- IT4smart  GmbH <support@it4smart.eu> Tue, 17 May 2016 18:58:36 +0200

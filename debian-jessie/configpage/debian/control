@@ -1,7 +1,7 @@
 Source: configpage
 Section: utils
 Priority: optional
-Maintainer: IT4S GmbH <support@it4s.eu>
+Maintainer: IT4smart GmbH <support@it4smart.eu>
 Build-Depends: debhelper (>= 9), qt5-default, cmake
 Standards-Version: 3.9.5
 

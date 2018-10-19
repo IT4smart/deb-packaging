@@ -1,4 +1,4 @@
-# IT4S Debian and Ubuntu packaging
+# IT4smart Debian and Ubuntu packaging
 This repository gathers the deb packaging files used to build IT4S softwares.
 
 ## Building packages
@@ -19,7 +19,7 @@ To update the `management-agent` package for Debian Jessie, change to the corres
 
 
 Then create a new changelog entry for the packages:
-`# ./changelog.sh > debian/changelos` 
+`# ./changelog.sh > debian/changelos`
 
 You are ready to run the `stockanalyses-debbuild.sh` that will download the source and build the package:
 `# sudo ../../stockanalyses-debbuild.sh i386`
