@@ -104,6 +104,10 @@ function prepare_build_env() {
       APT_INCLUDES="${APT_INCLUDES},build-essential,bc,dh-systemd,qt5-default,cmake,dh-make"
     fi
 
+    if [ "${PKGNAME}" = "directlogin" ]; then
+      APT_INCLUDES="${APT_INCLUDES},build-essential"
+    fi
+
     if [ "${PKGNAME}" = "management-agent" ] ; then
       APT_INCLUDES="${APT_INCLUDES}, dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
     fi
@@ -240,8 +244,9 @@ while read -r src filename dest taropt || [[ -n "$src" ]]; do
 
 done <sources
 
-cp -a "$(pwd)/debian" "${R}${SRC_DIR}/${PKGNAME}"
-
+if [ -d "$(pwd)/debian" ] ; then
+  cp -a "$(pwd)/debian" "${R}${SRC_DIR}/${PKGNAME}"
+fi
 # create virtual python enviroment
 if [ "${PKGNAME}" == "management-agent" ] ; then
 	chroot_exec virtualenv -q "${SRC_DIR}/virt-build" --no-site-packages
