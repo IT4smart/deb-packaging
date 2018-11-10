@@ -1,0 +1,8 @@
+/tmp/git-tmp.Ep6Gdh /opt/it4smart/deb-packaging/debian-jessie/rpb2-device-thinclient-it4smart
+
+rpb2-device-thinclient-it4smart (1.0.0~deb8) jessie; urgency=low
+  * First version of rpb2-device-thinclient-it4smart metapackage
+
+  * Initial commit
+
+ -- IT4smart  GmbH <support@it4smart.eu> Sat, 10 Nov 2018 17:32:44 +0100

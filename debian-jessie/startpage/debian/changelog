@@ -1,4 +1,8 @@
-/tmp/git-tmp.Fp9Ghn /opt/it4smart/deb-packaging/debian-jessie/startpage
+/tmp/git-tmp.iUJFip /opt/it4smart/deb-packaging/debian-jessie/startpage
+startpage (0.9.7~deb8) jessie; urgency=low
+  * Change default logo from IT4S to IT4smart.
+
+ -- IT4smart GmbH <support@it4smart.eu>  Thu, 1 Nov 2018 19:59:29 +0100
 startpage (0.9.6~deb8) jessie; urgency=low
   * Set CMake command to generate ui header file.
 

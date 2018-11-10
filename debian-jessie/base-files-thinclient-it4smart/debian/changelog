@@ -1,0 +1,12 @@
+/tmp/git-tmp.eSUSzJ /opt/it4smart/deb-packaging/debian-jessie/base-files-thinclient-it4smart
+
+base-files-thinclient-it4smart (1.0.0~deb8) jessie; urgency=low
+  * Cleanup repository. Add README.
+
+  * Make pre and post files executable.
+
+  * Initial commit for package.
+
+  * Initial commit
+
+ -- IT4smart  GmbH <support@it4smart.eu> Sat, 10 Nov 2018 20:46:23 +0100

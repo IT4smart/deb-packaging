@@ -99,13 +99,9 @@ fi
 
 function prepare_build_env() {
 
-    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git
+    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git,build-essential,debhelper
     if [ "${PKGNAME}" = "startpage" ] || [ "${PKGNAME}" = "configpage" ]; then
-      APT_INCLUDES="${APT_INCLUDES},build-essential,bc,dh-systemd,qt5-default,cmake,dh-make"
-    fi
-
-    if [ "${PKGNAME}" = "directlogin" ]; then
-      APT_INCLUDES="${APT_INCLUDES},build-essential"
+      APT_INCLUDES="${APT_INCLUDES},bc,dh-systemd,qt5-default,cmake,dh-make"
     fi
 
     if [ "${PKGNAME}" = "management-agent" ] ; then

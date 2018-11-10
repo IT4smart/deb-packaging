@@ -1,5 +1,5 @@
 # IT4smart Debian and Ubuntu packaging
-This repository gathers the deb packaging files used to build IT4S softwares.
+This repository gathers the deb packaging files used to build IT4smart softwares.
 
 ## Building packages
 We generate a fresh chroot for every package we want to build.

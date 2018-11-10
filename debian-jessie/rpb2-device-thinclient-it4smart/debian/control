@@ -1,0 +1,15 @@
+Source: rpb2-device-thinclient-it4smart
+Maintainer: IT4smart GmbH <support@it4smart.eu>
+Build-Depends: debhelper (>= 9)
+Vcs-Git: https://github.com/IT4smart/rpb2-device-thinclient-it4smart
+Homepage: https://it4smart.eu
+Standards-Version: 3.9.5
+
+Package: rpb2-device-thinclient-it4smart
+Architecture: armhf
+Section: metapackages
+Priority: required
+Essential: No
+Pre-Depends: dpkg (>= 1.16.1), ${misc:Pre-Depends}
+Depends: ${misc:Depends}, startpage, configpage, base-files-thinclient-it4smart
+Description: Raspberry Pi 2 Thinclient metapackage
