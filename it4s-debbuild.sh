@@ -105,7 +105,7 @@ function prepare_build_env() {
     fi
 
     if [ "${PKGNAME}" = "management-agent" ] ; then
-      APT_INCLUDES="${APT_INCLUDES}, dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
+      APT_INCLUDES="${APT_INCLUDES},dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
     fi
 
     # Base debootstrap

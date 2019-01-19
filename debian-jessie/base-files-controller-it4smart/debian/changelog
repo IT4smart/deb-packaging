@@ -1,0 +1,10 @@
+/tmp/git-tmp.BQPAl7 /opt/it4smart/deb-packaging/debian-jessie/base-files-controller-it4smart
+
+base-files-controller-it4smart (1.0.0~deb8) jessie; urgency=low
+  * Cleanup prerm file
+
+  * First release.
+
+  * Initial commit
+
+ -- IT4smart  GmbH <support@it4smart.eu> Fri, 18 Jan 2019 23:35:31 +0100

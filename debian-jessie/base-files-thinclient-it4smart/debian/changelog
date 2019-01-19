@@ -1,4 +1,8 @@
-/tmp/git-tmp.eSUSzJ /opt/it4smart/deb-packaging/debian-jessie/base-files-thinclient-it4smart
+/tmp/git-tmp.dTCZBH /opt/it4smart/deb-packaging/debian-jessie/base-files-thinclient-it4smart
+base-files-thinclient-it4smart (1.0.1~deb8) jessie; urgency=low
+  * Move some files to new repository base-files-it4smart. Remove the moved files. Set version to 1.0.1
+
+ -- IT4smart GmbH <support@it4smart.eu>  Fri, 18 Jan 2019 21:31:12 +0100
 
 base-files-thinclient-it4smart (1.0.0~deb8) jessie; urgency=low
   * Cleanup repository. Add README.

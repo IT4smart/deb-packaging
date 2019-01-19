@@ -11,5 +11,5 @@ Section: metapackages
 Priority: required
 Essential: No
 Pre-Depends: dpkg (>= 1.16.1), ${misc:Pre-Depends}
-Depends: ${misc:Depends}, startpage, configpage, base-files-thinclient-it4smart
+Depends: ${misc:Depends}, startpage (= 0.9.6), configpage, base-files-thinclient-it4smart
 Description: Raspberry Pi 2 Thinclient metapackage
