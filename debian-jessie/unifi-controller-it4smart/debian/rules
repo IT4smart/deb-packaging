@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with systemd
+
+override_dh_installinit:
+	dh_installinit -punifi-controller-it4smart --name=unifi

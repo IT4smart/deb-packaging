@@ -99,13 +99,13 @@ fi
 
 function prepare_build_env() {
 
-    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git,build-essential,debhelper
+    APT_INCLUDES=apt-transport-https,apt-utils,ca-certificates,dialog,sudo,git,build-essential,debhelper,dh-systemd
     if [ "${PKGNAME}" = "startpage" ] || [ "${PKGNAME}" = "configpage" ]; then
-      APT_INCLUDES="${APT_INCLUDES},bc,dh-systemd,qt5-default,cmake,dh-make"
+      APT_INCLUDES="${APT_INCLUDES},bc,qt5-default,cmake,dh-make"
     fi
 
     if [ "${PKGNAME}" = "management-agent" ] ; then
-      APT_INCLUDES="${APT_INCLUDES},dh-systemd,python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
+      APT_INCLUDES="${APT_INCLUDES},python-virtualenv,python2.7,python2.7-dev,dh-virtualenv"
     fi
 
     # Base debootstrap

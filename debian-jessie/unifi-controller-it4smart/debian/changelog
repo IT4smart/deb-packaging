@@ -1,0 +1,10 @@
+/tmp/git-tmp.d0RBto /opt/it4smart/deb-packaging/debian-jessie/unifi-controller-it4smart
+
+unifi-controller-it4smart (1.0.0~deb8) jessie; urgency=low
+  * Restructure package.
+
+  * First release.
+
+  * Initial commit
+
+ -- IT4smart  GmbH <support@it4smart.eu> Sat, 19 Jan 2019 23:27:38 +0100
